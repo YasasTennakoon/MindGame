@@ -43,7 +43,10 @@ class MainActivity : AppCompatActivity() {
         var b25=findViewById<Button>(R.id.button25)
         var txt1=findViewById<TextView>(R.id.textView1)
         var txt2=findViewById<TextView>(R.id.textView2)
+        var exit=findViewById<Button>(R.id.exit)
         var count=0
+        var score=0
+        var total=0
 
         var firstrow= mutableListOf<Button>(b1,b2,b3,b4,b5)
         var secondrow= mutableListOf<Button>(b6,b7,b8,b9,b10)
@@ -69,9 +72,14 @@ class MainActivity : AppCompatActivity() {
 
         var rows= arrayOf(firstrow,secondrow,thirdrow,forthrow,fifthrow)
         var coloums= arrayOf(firstcoloum,secondcoloum,thirdcoloum,forthcoloum,fifthcoloum)
+        var conditions= arrayOf(threebythree,threebyfour,threebyfive,fourbythree,fourbyfour,fourbyfive,fivebythree,fivebyfour,fivebyfive)
         var buttoncolors= mutableListOf<Int>()
         var correctbuttons= mutableListOf<Button>()
         var r=Random()
+
+        exit.setOnClickListener {
+            System.exit(0)
+        }
 
         fun colorbtn()
         {
@@ -105,15 +113,12 @@ class MainActivity : AppCompatActivity() {
 
         fun generateButton() {
             colorbtn()
-            //buttoncolors.clear()
+            buttoncolors.clear()
             correctbuttons.clear()
-            txt1.setText(" ")
-            txt2.setText(" ")
+            txt1.setText(""+score+"")
+            txt2.setText(""+total+"")
             var randomnum = 3 + r.nextInt(3)
             var coloumran=3 + r.nextInt(3)
-            txt1.setText(" "+correctbuttons.size+" ")
-           // txt2.setText(" "+coloumran+" ")
-
             if(randomnum == 3 && coloumran==3) {
 
                 for (i in rows[3]) {
@@ -150,6 +155,8 @@ class MainActivity : AppCompatActivity() {
                 correctbuttons.add(threebythree[buttoncolors[1]])
                 correctbuttons.add(threebythree[buttoncolors[2]])
                 correctbuttons.add(threebythree[buttoncolors[3]])
+                total += correctbuttons.size
+                txt2.setText(""+total+"")
                 var countdown=object :CountDownTimer(5000,1000)
                 {
                     override fun onTick(millisUnitilFinished: Long) {
@@ -207,6 +214,8 @@ class MainActivity : AppCompatActivity() {
                 correctbuttons.add(threebyfour[buttoncolors[1]])
                 correctbuttons.add(threebyfour[buttoncolors[2]])
                 correctbuttons.add(threebyfour[buttoncolors[3]])
+                total += correctbuttons.size
+                txt2.setText(""+total+"")
                 var countdownthree=object :CountDownTimer(5000,1000)
                 {
                     override fun onTick(millisUnitilFinished: Long) {
@@ -280,6 +289,8 @@ class MainActivity : AppCompatActivity() {
                 correctbuttons.add(threebyfive[buttoncolors[1]])
                 correctbuttons.add(threebyfive[buttoncolors[2]])
                 correctbuttons.add(threebyfive[buttoncolors[3]])
+                total += correctbuttons.size
+                txt2.setText(""+total+"")
                 var countdownfive=object :CountDownTimer(5000,1000)
                 {
                     override fun onTick(millisUnitilFinished: Long) {
@@ -335,6 +346,8 @@ class MainActivity : AppCompatActivity() {
                 correctbuttons.add(fourbythree[buttoncolors[2]])
                 correctbuttons.add(fourbythree[buttoncolors[3]])
                 correctbuttons.add(fourbythree[buttoncolors[4]])
+                total += correctbuttons.size
+                txt2.setText(""+total+"")
                 var countdownfourbythree=object :CountDownTimer(5000,1000)
                 {
                     override fun onTick(millisUnitilFinished: Long) {
@@ -391,6 +404,8 @@ class MainActivity : AppCompatActivity() {
                 correctbuttons.add(fourbyfour[buttoncolors[2]])
                 correctbuttons.add(fourbyfour[buttoncolors[3]])
                 correctbuttons.add(fourbyfour[buttoncolors[4]])
+                total += correctbuttons.size
+                txt2.setText(""+total+"")
                 var countdownfourbyfour=object :CountDownTimer(5000,1000)
                 {
                     override fun onTick(millisUnitilFinished: Long) {
@@ -465,6 +480,8 @@ class MainActivity : AppCompatActivity() {
                 correctbuttons.add(fivebyfive[buttoncolors[3]])
                 correctbuttons.add(fivebyfive[buttoncolors[4]])
                 correctbuttons.add(fivebyfive[buttoncolors[5]])
+                total += correctbuttons.size
+                txt2.setText(""+total+"")
                 var countdownfivebyfive=object :CountDownTimer(5000,1000)
                 {
                     override fun onTick(millisUnitilFinished: Long) {
@@ -536,6 +553,8 @@ class MainActivity : AppCompatActivity() {
                 correctbuttons.add(fourbyfive[buttoncolors[2]])
                 correctbuttons.add(fourbyfive[buttoncolors[3]])
                 correctbuttons.add(fourbyfive[buttoncolors[4]])
+                total += correctbuttons.size
+                txt2.setText(""+total+"")
                 var countdownfourbyfive=object :CountDownTimer(5000,1000)
                 {
                     override fun onTick(millisUnitilFinished: Long) {
@@ -598,6 +617,8 @@ class MainActivity : AppCompatActivity() {
                 correctbuttons.add(fivebyfour[buttoncolors[3]])
                 correctbuttons.add(fivebyfour[buttoncolors[4]])
                 correctbuttons.add(fivebyfour[buttoncolors[5]])
+                total += correctbuttons.size
+                txt2.setText(""+total+"")
                 var countdownfivebyfour=object :CountDownTimer(5000,1000)
                 {
                     override fun onTick(millisUnitilFinished: Long) {
@@ -651,6 +672,7 @@ class MainActivity : AppCompatActivity() {
                 b20.setVisibility(View.INVISIBLE);
                 b25.setVisibility(View.INVISIBLE);
                 buttoncolors.clear()
+
                 var random=0 + r.nextInt(fivebythree.size)
                 while (buttoncolors.size<=6)
                 {
@@ -674,6 +696,8 @@ class MainActivity : AppCompatActivity() {
                 correctbuttons.add(fivebythree[buttoncolors[3]])
                 correctbuttons.add(fivebythree[buttoncolors[4]])
                 correctbuttons.add(fivebythree[buttoncolors[5]])
+                total += correctbuttons.size
+                txt2.setText(""+total+"")
                 var countdownfivebythree=object :CountDownTimer(5000,1000)
                 {
                     override fun onTick(millisUnitilFinished: Long) {
@@ -695,494 +719,133 @@ class MainActivity : AppCompatActivity() {
 
         }
         generateButton()
-        b1.setOnClickListener {
-            if(count<=correctbuttons.size-2)
+        fun buttoncheak(s:Button)
+        {
+            if(count<correctbuttons.size-1)
             {
-                if(b1 in correctbuttons)
+                if(s in correctbuttons)
                 {
-                    b1.setBackgroundColor(Color.GREEN)
+                    s.setBackgroundColor(Color.GREEN)
                     count++
+                    score++
+                    txt1.setText(""+score+"")
+                    button(s)
                 }
                 else
                 {
-                    b1.setBackgroundColor(Color.RED)
-                    b1.setText("X")
+                    s.setBackgroundColor(Color.RED)
+                    count++
+                    s.setText("X")
+                    button(s)
+
                 }
             }
             else
             {
                 count=0
                 generateButton()
-            }
 
+            }
+        }
+        b1.setOnClickListener {
+            buttoncheak(b1)
         }
         b2.setOnClickListener {
-            if(count<=correctbuttons.size-2)
-            {
-                if(b2 in correctbuttons)
-                {
-                    b2.setBackgroundColor(Color.GREEN)
-                    count++
-                }
-                else
-                {
-                    b2.setBackgroundColor(Color.RED)
-                    b2.setText("X")
-                }
-            }
-            else
-            {
-                count=0
-                generateButton()
-            }
-
+            buttoncheak(b2)
         }
         b3.setOnClickListener {
-            if(count<=correctbuttons.size-2)
-            {
-                if(b3 in correctbuttons)
-                {
-                    b3.setBackgroundColor(Color.GREEN)
-                    count++
-                }
-                else
-                {
-                    b3.setBackgroundColor(Color.RED)
-                    b3.setText("X")
-                }
-            }
-            else
-            {
-                count=0
-                generateButton()
-            }
-
+            buttoncheak(b3)
         }
         b4.setOnClickListener {
-            if(count<=correctbuttons.size-2)
-            {
-                if(b4 in correctbuttons)
-                {
-                    b4.setBackgroundColor(Color.GREEN)
-                    count++
-                }
-                else
-                {
-                    b4.setBackgroundColor(Color.RED)
-                }
-            }
-            else
-            {
-                count=0
-                generateButton()
-            }
-
+            buttoncheak(b4)
         }
         b5.setOnClickListener {
-            if(count<=correctbuttons.size-2)
-            {
-                if(b5 in correctbuttons)
-                {
-                    b5.setBackgroundColor(Color.GREEN)
-                    count++
-                }
-                else
-                {
-                    b5.setBackgroundColor(Color.RED)
-                }
-            }
-            else
-            {
-                count=0
-                generateButton()
-            }
+            buttoncheak(b5)
         }
         b6.setOnClickListener {
-            if(count<=correctbuttons.size-2)
-            {
-                if(b6 in correctbuttons)
-                {
-                    b6.setBackgroundColor(Color.GREEN)
-                    count++
-                }
-                else
-                {
-                    b6.setBackgroundColor(Color.RED)
-                }
-            }
-            else
-            {
-                count=0
-                generateButton()
-            }
+            buttoncheak(b6)
         }
         b7.setOnClickListener {
-            if(count<=correctbuttons.size-2)
-            {
-                if(b7 in correctbuttons)
-                {
-                    b7.setBackgroundColor(Color.GREEN)
-                    count++
-                }
-                else
-                {
-                    b7.setBackgroundColor(Color.RED)
-                }
-            }
-            else
-            {
-                count=0
-                generateButton()
-            }
+            buttoncheak(b7)
         }
         b8.setOnClickListener {
-            if(count<=correctbuttons.size-2)
-            {
-                if(b8 in correctbuttons)
-                {
-                    b8.setBackgroundColor(Color.GREEN)
-                    count++
-                }
-                else
-                {
-                    b8.setBackgroundColor(Color.RED)
-                }
-            }
-            else
-            {
-                count=0
-                generateButton()
-            }
+            buttoncheak(b8)
         }
         b9.setOnClickListener {
-            if(count<=correctbuttons.size-2)
-            {
-                if(b9 in correctbuttons)
-                {
-                    b9.setBackgroundColor(Color.GREEN)
-                    count++
-                }
-                else
-                {
-                    b9.setBackgroundColor(Color.RED)
-                }
-            }
-            else
-            {
-                count=0
-                generateButton()
-            }
+            buttoncheak(b9)
         }
         b10.setOnClickListener {
-            if(count<=correctbuttons.size-2)
-            {
-                if(b10 in correctbuttons)
-                {
-                    b10.setBackgroundColor(Color.GREEN)
-                    count++
-                }
-                else
-                {
-                    b10.setBackgroundColor(Color.RED)
-                }
-            }
-            else
-            {
-                count=0
-                generateButton()
-            }
+            buttoncheak(b10)
         }
         b11.setOnClickListener {
-            if(count<=correctbuttons.size-2)
-            {
-                if(b11 in correctbuttons)
-                {
-                    b11.setBackgroundColor(Color.GREEN)
-                    count++
-                }
-                else
-                {
-                    b11.setBackgroundColor(Color.RED)
-                }
-            }
-            else
-            {
-                count=0
-                generateButton()
-            }
+            buttoncheak(b11)
         }
         b12.setOnClickListener {
-            if(count<=correctbuttons.size-2)
-            {
-                if(b12 in correctbuttons)
-                {
-                    b12.setBackgroundColor(Color.GREEN)
-                    count++
-                }
-                else
-                {
-                    b12.setBackgroundColor(Color.RED)
-                }
-            }
-            else
-            {
-                count=0
-                generateButton()
-            }
+            buttoncheak(b12)
+
         }
         b13.setOnClickListener {
-            if(count<=correctbuttons.size-2)
-            {
-                if(b13 in correctbuttons)
-                {
-                    b13.setBackgroundColor(Color.GREEN)
-                    count++
-                }
-                else
-                {
-                    b13.setBackgroundColor(Color.RED)
-                }
-            }
-            else
-            {
-                count=0
-                generateButton()
-            }
+            buttoncheak(b13)
         }
         b14.setOnClickListener {
-            if(count<=correctbuttons.size-2)
-            {
-                if(b14 in correctbuttons)
-                {
-                    b14.setBackgroundColor(Color.GREEN)
-                    count++
-                }
-                else
-                {
-                    b14.setBackgroundColor(Color.RED)
-                }
-            }
-            else
-            {
-                count=0
-                generateButton()
-            }
+            buttoncheak(b14)
         }
         b15.setOnClickListener {
-            if(count<=correctbuttons.size-2)
-            {
-                if(b15 in correctbuttons)
-                {
-                    b15.setBackgroundColor(Color.GREEN)
-                    count++
-                }
-                else
-                {
-                    b15.setBackgroundColor(Color.RED)
-                }
-            }
-            else
-            {
-                count=0
-                generateButton()
-            }
+            buttoncheak(b15)
         }
         b16.setOnClickListener {
-            if(count<=correctbuttons.size-2)
-            {
-                if(b16 in correctbuttons)
-                {
-                    b16.setBackgroundColor(Color.GREEN)
-                    count++
-                }
-                else
-                {
-                    b16.setBackgroundColor(Color.RED)
-                }
-            }
-            else
-            {
-                count=0
-                generateButton()
-            }
+            buttoncheak(b16)
         }
         b17.setOnClickListener {
-            if(count<=correctbuttons.size-2)
-            {
-                if(b17 in correctbuttons)
-                {
-                    b17.setBackgroundColor(Color.GREEN)
-                    count++
-                }
-                else
-                {
-                    b17.setBackgroundColor(Color.RED)
-                }
-            }
-            else
-            {
-                count=0
-                generateButton()
-            }
+            buttoncheak(b17)
         }
         b18.setOnClickListener {
-            if(count<=correctbuttons.size-2)
-            {
-                if(b18 in correctbuttons)
-                {
-                    b18.setBackgroundColor(Color.GREEN)
-                    count++
-                }
-                else
-                {
-                    b18.setBackgroundColor(Color.RED)
-                }
-            }
-            else
-            {
-                count=0
-                generateButton()
-            }
+            buttoncheak(b18)
         }
         b19.setOnClickListener {
-            if(count<=correctbuttons.size-2)
-            {
-                if(b19 in correctbuttons)
-                {
-                    b19.setBackgroundColor(Color.GREEN)
-                    count++
-                }
-                else
-                {
-                    b19.setBackgroundColor(Color.RED)
-                }
-            }
-            else
-            {
-                count=0
-                generateButton()
-            }
+            buttoncheak(b19)
         }
         b20.setOnClickListener {
-            if(count<=correctbuttons.size-2)
-            {
-                if(b20 in correctbuttons)
-                {
-                    b20.setBackgroundColor(Color.GREEN)
-                    count++
-                }
-                else
-                {
-                    b20.setBackgroundColor(Color.RED)
-                }
-            }
-            else
-            {
-                count=0
-                generateButton()
-            }
+            buttoncheak(b20)
         }
         b21.setOnClickListener {
-            if(count<=correctbuttons.size-2)
-            {
-                if(b21 in correctbuttons)
-                {
-                    b21.setBackgroundColor(Color.GREEN)
-                    count++
-                }
-                else
-                {
-                    b21.setBackgroundColor(Color.RED)
-                }
-            }
-            else
-            {
-                count=0
-                generateButton()
-            }
+            buttoncheak(b21)
         }
         b22.setOnClickListener {
-            if(count<=correctbuttons.size-2)
-            {
-                if(b22 in correctbuttons)
-                {
-                    b22.setBackgroundColor(Color.GREEN)
-                    count++
-                }
-                else
-                {
-                    b22.setBackgroundColor(Color.RED)
-                }
-            }
-            else
-            {
-                count=0
-                generateButton()
-            }
+            buttoncheak(b22)
         }
         b23.setOnClickListener {
-            if(count<=correctbuttons.size-2)
-            {
-                if(b23 in correctbuttons)
-                {
-                    b23.setBackgroundColor(Color.GREEN)
-                    count++
-                }
-                else
-                {
-                    b23.setBackgroundColor(Color.RED)
-                }
-            }
-            else
-            {
-                count=0
-                generateButton()
-            }
+            buttoncheak(b23)
         }
         b24.setOnClickListener {
-            if(count<=correctbuttons.size-2)
-            {
-                if(b24 in correctbuttons)
-                {
-                    b24.setBackgroundColor(Color.GREEN)
-                    count++
-                }
-                else
-                {
-                    b24.setBackgroundColor(Color.RED)
-                }
-            }
-            else
-            {
-                count=0
-                generateButton()
-            }
+            buttoncheak(b24)
         }
         b25.setOnClickListener {
-            if(count<=correctbuttons.size-2)
-            {
-                if(b25 in correctbuttons)
-                {
-                    b25.setBackgroundColor(Color.GREEN)
-                    count++
-                }
-                else
-                {
-                    b25.setBackgroundColor(Color.RED)
-                }
-            }
-            else
-            {
-                count=0
-                generateButton()
-            }
+            buttoncheak(b25)
         }
 
-
-
-
-
     }
+
+    fun button(d:Button)
+    {
+        var countdownfivebyfour=object :CountDownTimer(2000,1000)
+        {
+            override fun onTick(millisUnitilFinished: Long) {
+
+            }
+
+            override fun onFinish() {
+                d.setBackgroundColor(Color.BLACK)
+                d.setText("")
+
+            }
+
+        }.start()
+    }
+
+
+
+
 
 
 }
