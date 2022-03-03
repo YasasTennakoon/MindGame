@@ -700,12 +700,13 @@ class MainActivity : AppCompatActivity() {
             {
                 if(b1 in correctbuttons)
                 {
-                    b1.setBackgroundColor(Color.BLUE)
+                    b1.setBackgroundColor(Color.GREEN)
                     count++
                 }
                 else
                 {
                     b1.setBackgroundColor(Color.RED)
+                    b1.setText("X")
                 }
             }
             else
@@ -720,12 +721,13 @@ class MainActivity : AppCompatActivity() {
             {
                 if(b2 in correctbuttons)
                 {
-                    b2.setBackgroundColor(Color.BLUE)
+                    b2.setBackgroundColor(Color.GREEN)
                     count++
                 }
                 else
                 {
                     b2.setBackgroundColor(Color.RED)
+                    b2.setText("X")
                 }
             }
             else
@@ -740,12 +742,13 @@ class MainActivity : AppCompatActivity() {
             {
                 if(b3 in correctbuttons)
                 {
-                    b3.setBackgroundColor(Color.BLUE)
+                    b3.setBackgroundColor(Color.GREEN)
                     count++
                 }
                 else
                 {
                     b3.setBackgroundColor(Color.RED)
+                    b3.setText("X")
                 }
             }
             else
@@ -760,7 +763,7 @@ class MainActivity : AppCompatActivity() {
             {
                 if(b4 in correctbuttons)
                 {
-                    b4.setBackgroundColor(Color.BLUE)
+                    b4.setBackgroundColor(Color.GREEN)
                     count++
                 }
                 else
@@ -780,7 +783,7 @@ class MainActivity : AppCompatActivity() {
             {
                 if(b5 in correctbuttons)
                 {
-                    b5.setBackgroundColor(Color.BLUE)
+                    b5.setBackgroundColor(Color.GREEN)
                     count++
                 }
                 else
@@ -799,7 +802,7 @@ class MainActivity : AppCompatActivity() {
             {
                 if(b6 in correctbuttons)
                 {
-                    b6.setBackgroundColor(Color.BLUE)
+                    b6.setBackgroundColor(Color.GREEN)
                     count++
                 }
                 else
@@ -818,7 +821,7 @@ class MainActivity : AppCompatActivity() {
             {
                 if(b7 in correctbuttons)
                 {
-                    b7.setBackgroundColor(Color.BLUE)
+                    b7.setBackgroundColor(Color.GREEN)
                     count++
                 }
                 else
@@ -837,7 +840,7 @@ class MainActivity : AppCompatActivity() {
             {
                 if(b8 in correctbuttons)
                 {
-                    b8.setBackgroundColor(Color.BLUE)
+                    b8.setBackgroundColor(Color.GREEN)
                     count++
                 }
                 else
@@ -856,7 +859,7 @@ class MainActivity : AppCompatActivity() {
             {
                 if(b9 in correctbuttons)
                 {
-                    b9.setBackgroundColor(Color.BLUE)
+                    b9.setBackgroundColor(Color.GREEN)
                     count++
                 }
                 else
@@ -875,7 +878,7 @@ class MainActivity : AppCompatActivity() {
             {
                 if(b10 in correctbuttons)
                 {
-                    b10.setBackgroundColor(Color.BLUE)
+                    b10.setBackgroundColor(Color.GREEN)
                     count++
                 }
                 else
@@ -894,7 +897,7 @@ class MainActivity : AppCompatActivity() {
             {
                 if(b11 in correctbuttons)
                 {
-                    b11.setBackgroundColor(Color.BLUE)
+                    b11.setBackgroundColor(Color.GREEN)
                     count++
                 }
                 else
@@ -913,7 +916,7 @@ class MainActivity : AppCompatActivity() {
             {
                 if(b12 in correctbuttons)
                 {
-                    b12.setBackgroundColor(Color.BLUE)
+                    b12.setBackgroundColor(Color.GREEN)
                     count++
                 }
                 else
@@ -932,7 +935,7 @@ class MainActivity : AppCompatActivity() {
             {
                 if(b13 in correctbuttons)
                 {
-                    b13.setBackgroundColor(Color.BLUE)
+                    b13.setBackgroundColor(Color.GREEN)
                     count++
                 }
                 else
@@ -951,7 +954,7 @@ class MainActivity : AppCompatActivity() {
             {
                 if(b14 in correctbuttons)
                 {
-                    b14.setBackgroundColor(Color.BLUE)
+                    b14.setBackgroundColor(Color.GREEN)
                     count++
                 }
                 else
@@ -970,7 +973,7 @@ class MainActivity : AppCompatActivity() {
             {
                 if(b15 in correctbuttons)
                 {
-                    b15.setBackgroundColor(Color.BLUE)
+                    b15.setBackgroundColor(Color.GREEN)
                     count++
                 }
                 else
@@ -989,7 +992,7 @@ class MainActivity : AppCompatActivity() {
             {
                 if(b16 in correctbuttons)
                 {
-                    b16.setBackgroundColor(Color.BLUE)
+                    b16.setBackgroundColor(Color.GREEN)
                     count++
                 }
                 else
@@ -1008,7 +1011,7 @@ class MainActivity : AppCompatActivity() {
             {
                 if(b17 in correctbuttons)
                 {
-                    b17.setBackgroundColor(Color.BLUE)
+                    b17.setBackgroundColor(Color.GREEN)
                     count++
                 }
                 else
@@ -1027,7 +1030,7 @@ class MainActivity : AppCompatActivity() {
             {
                 if(b18 in correctbuttons)
                 {
-                    b18.setBackgroundColor(Color.BLUE)
+                    b18.setBackgroundColor(Color.GREEN)
                     count++
                 }
                 else
@@ -1046,7 +1049,7 @@ class MainActivity : AppCompatActivity() {
             {
                 if(b19 in correctbuttons)
                 {
-                    b19.setBackgroundColor(Color.BLUE)
+                    b19.setBackgroundColor(Color.GREEN)
                     count++
                 }
                 else
@@ -1065,7 +1068,7 @@ class MainActivity : AppCompatActivity() {
             {
                 if(b20 in correctbuttons)
                 {
-                    b20.setBackgroundColor(Color.BLUE)
+                    b20.setBackgroundColor(Color.GREEN)
                     count++
                 }
                 else
@@ -1084,7 +1087,7 @@ class MainActivity : AppCompatActivity() {
             {
                 if(b21 in correctbuttons)
                 {
-                    b21.setBackgroundColor(Color.BLUE)
+                    b21.setBackgroundColor(Color.GREEN)
                     count++
                 }
                 else
@@ -1103,7 +1106,7 @@ class MainActivity : AppCompatActivity() {
             {
                 if(b22 in correctbuttons)
                 {
-                    b22.setBackgroundColor(Color.BLUE)
+                    b22.setBackgroundColor(Color.GREEN)
                     count++
                 }
                 else
@@ -1122,7 +1125,7 @@ class MainActivity : AppCompatActivity() {
             {
                 if(b23 in correctbuttons)
                 {
-                    b23.setBackgroundColor(Color.BLUE)
+                    b23.setBackgroundColor(Color.GREEN)
                     count++
                 }
                 else
@@ -1141,7 +1144,7 @@ class MainActivity : AppCompatActivity() {
             {
                 if(b24 in correctbuttons)
                 {
-                    b24.setBackgroundColor(Color.BLUE)
+                    b24.setBackgroundColor(Color.GREEN)
                     count++
                 }
                 else
@@ -1160,7 +1163,7 @@ class MainActivity : AppCompatActivity() {
             {
                 if(b25 in correctbuttons)
                 {
-                    b25.setBackgroundColor(Color.BLUE)
+                    b25.setBackgroundColor(Color.GREEN)
                     count++
                 }
                 else
