@@ -112,8 +112,8 @@ class MainActivity : AppCompatActivity() {
             txt2.setText(" ")
             var randomnum = 3 + r.nextInt(3)
             var coloumran=3 + r.nextInt(3)
-            txt1.setText(" "+randomnum+" ")
-            txt2.setText(" "+coloumran+" ")
+            txt1.setText(" "+correctbuttons.size+" ")
+           // txt2.setText(" "+coloumran+" ")
 
             if(randomnum == 3 && coloumran==3) {
 
@@ -701,7 +701,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         b1.setOnClickListener {
-            if(count<=correctbuttons.size)
+            if(count<=correctbuttons.size-2)
             {
                 if(b1 in correctbuttons)
                 {
@@ -721,7 +721,7 @@ class MainActivity : AppCompatActivity() {
 
         }
         b2.setOnClickListener {
-            if(count<=correctbuttons.size)
+            if(count<=correctbuttons.size-2)
             {
                 if(b2 in correctbuttons)
                 {
@@ -741,7 +741,7 @@ class MainActivity : AppCompatActivity() {
 
         }
         b3.setOnClickListener {
-            if(count<=correctbuttons.size)
+            if(count<=correctbuttons.size-2)
             {
                 if(b3 in correctbuttons)
                 {
@@ -761,7 +761,7 @@ class MainActivity : AppCompatActivity() {
 
         }
         b4.setOnClickListener {
-            if(count<=correctbuttons.size)
+            if(count<=correctbuttons.size-2)
             {
                 if(b4 in correctbuttons)
                 {
@@ -781,7 +781,7 @@ class MainActivity : AppCompatActivity() {
 
         }
         b5.setOnClickListener {
-            if(count<=correctbuttons.size)
+            if(count<=correctbuttons.size-2)
             {
                 if(b5 in correctbuttons)
                 {
@@ -800,7 +800,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         b6.setOnClickListener {
-            if(count<=correctbuttons.size)
+            if(count<=correctbuttons.size-2)
             {
                 if(b6 in correctbuttons)
                 {
@@ -819,7 +819,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         b7.setOnClickListener {
-            if(count<=correctbuttons.size)
+            if(count<=correctbuttons.size-2)
             {
                 if(b7 in correctbuttons)
                 {
@@ -838,7 +838,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         b8.setOnClickListener {
-            if(count<=correctbuttons.size)
+            if(count<=correctbuttons.size-2)
             {
                 if(b8 in correctbuttons)
                 {
@@ -857,7 +857,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         b9.setOnClickListener {
-            if(count<=correctbuttons.size)
+            if(count<=correctbuttons.size-2)
             {
                 if(b9 in correctbuttons)
                 {
@@ -876,7 +876,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         b10.setOnClickListener {
-            if(count<=correctbuttons.size)
+            if(count<=correctbuttons.size-2)
             {
                 if(b10 in correctbuttons)
                 {
@@ -895,7 +895,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         b11.setOnClickListener {
-            if(count<=correctbuttons.size)
+            if(count<=correctbuttons.size-2)
             {
                 if(b11 in correctbuttons)
                 {
@@ -914,7 +914,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         b12.setOnClickListener {
-            if(count<=correctbuttons.size)
+            if(count<=correctbuttons.size-2)
             {
                 if(b12 in correctbuttons)
                 {
@@ -933,7 +933,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         b13.setOnClickListener {
-            if(count<=correctbuttons.size)
+            if(count<=correctbuttons.size-2)
             {
                 if(b13 in correctbuttons)
                 {
@@ -952,7 +952,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         b14.setOnClickListener {
-            if(count<=correctbuttons.size)
+            if(count<=correctbuttons.size-2)
             {
                 if(b14 in correctbuttons)
                 {
@@ -971,7 +971,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         b15.setOnClickListener {
-            if(count<=correctbuttons.size)
+            if(count<=correctbuttons.size-2)
             {
                 if(b15 in correctbuttons)
                 {
@@ -990,7 +990,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         b16.setOnClickListener {
-            if(count<=correctbuttons.size)
+            if(count<=correctbuttons.size-2)
             {
                 if(b16 in correctbuttons)
                 {
@@ -1009,7 +1009,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         b17.setOnClickListener {
-            if(count<=correctbuttons.size)
+            if(count<=correctbuttons.size-2)
             {
                 if(b17 in correctbuttons)
                 {
@@ -1028,7 +1028,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         b18.setOnClickListener {
-            if(count<=correctbuttons.size)
+            if(count<=correctbuttons.size-2)
             {
                 if(b18 in correctbuttons)
                 {
@@ -1047,7 +1047,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         b19.setOnClickListener {
-            if(count<=correctbuttons.size)
+            if(count<=correctbuttons.size-2)
             {
                 if(b19 in correctbuttons)
                 {
@@ -1066,7 +1066,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         b20.setOnClickListener {
-            if(count<=correctbuttons.size)
+            if(count<=correctbuttons.size-2)
             {
                 if(b20 in correctbuttons)
                 {
@@ -1085,7 +1085,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         b21.setOnClickListener {
-            if(count<=correctbuttons.size)
+            if(count<=correctbuttons.size-2)
             {
                 if(b21 in correctbuttons)
                 {
@@ -1104,7 +1104,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         b22.setOnClickListener {
-            if(count<=correctbuttons.size)
+            if(count<=correctbuttons.size-2)
             {
                 if(b22 in correctbuttons)
                 {
@@ -1123,7 +1123,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         b23.setOnClickListener {
-            if(count<=correctbuttons.size)
+            if(count<=correctbuttons.size-2)
             {
                 if(b23 in correctbuttons)
                 {
@@ -1142,7 +1142,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         b24.setOnClickListener {
-            if(count<=correctbuttons.size)
+            if(count<=correctbuttons.size-2)
             {
                 if(b24 in correctbuttons)
                 {
@@ -1161,7 +1161,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         b25.setOnClickListener {
-            if(count<=correctbuttons.size)
+            if(count<=correctbuttons.size-2)
             {
                 if(b25 in correctbuttons)
                 {
