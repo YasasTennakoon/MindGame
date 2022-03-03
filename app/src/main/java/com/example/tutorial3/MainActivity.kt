@@ -75,31 +75,31 @@ class MainActivity : AppCompatActivity() {
 
         fun colorbtn()
         {
-            b1.setBackgroundColor(Color.GRAY)
-            b2.setBackgroundColor(Color.GRAY)
-            b3.setBackgroundColor(Color.GRAY)
-            b4.setBackgroundColor(Color.GRAY)
-            b5.setBackgroundColor(Color.GRAY)
-            b6.setBackgroundColor(Color.GRAY)
-            b7.setBackgroundColor(Color.GRAY)
-            b8.setBackgroundColor(Color.GRAY)
-            b9.setBackgroundColor(Color.GRAY)
-            b10.setBackgroundColor(Color.GRAY)
-            b11.setBackgroundColor(Color.GRAY)
-            b12.setBackgroundColor(Color.GRAY)
-            b13.setBackgroundColor(Color.GRAY)
-            b14.setBackgroundColor(Color.GRAY)
-            b15.setBackgroundColor(Color.GRAY)
-            b16.setBackgroundColor(Color.GRAY)
-            b17.setBackgroundColor(Color.GRAY)
-            b18.setBackgroundColor(Color.GRAY)
-            b19.setBackgroundColor(Color.GRAY)
-            b20.setBackgroundColor(Color.GRAY)
-            b21.setBackgroundColor(Color.GRAY)
-            b22.setBackgroundColor(Color.GRAY)
-            b23.setBackgroundColor(Color.GRAY)
-            b24.setBackgroundColor(Color.GRAY)
-            b25.setBackgroundColor(Color.GRAY)
+            b1.setBackgroundColor(Color.BLACK)
+            b2.setBackgroundColor(Color.BLACK)
+            b3.setBackgroundColor(Color.BLACK)
+            b4.setBackgroundColor(Color.BLACK)
+            b5.setBackgroundColor(Color.BLACK)
+            b6.setBackgroundColor(Color.BLACK)
+            b7.setBackgroundColor(Color.BLACK)
+            b8.setBackgroundColor(Color.BLACK)
+            b9.setBackgroundColor(Color.BLACK)
+            b10.setBackgroundColor(Color.BLACK)
+            b11.setBackgroundColor(Color.BLACK)
+            b12.setBackgroundColor(Color.BLACK)
+            b13.setBackgroundColor(Color.BLACK)
+            b14.setBackgroundColor(Color.BLACK)
+            b15.setBackgroundColor(Color.BLACK)
+            b16.setBackgroundColor(Color.BLACK)
+            b17.setBackgroundColor(Color.BLACK)
+            b18.setBackgroundColor(Color.BLACK)
+            b19.setBackgroundColor(Color.BLACK)
+            b20.setBackgroundColor(Color.BLACK)
+            b21.setBackgroundColor(Color.BLACK)
+            b22.setBackgroundColor(Color.BLACK)
+            b23.setBackgroundColor(Color.BLACK)
+            b24.setBackgroundColor(Color.BLACK)
+            b25.setBackgroundColor(Color.BLACK)
 
         }
 
@@ -159,7 +159,7 @@ class MainActivity : AppCompatActivity() {
                     override fun onFinish() {
                         for(i in threebythree)
                         {
-                            i.setBackgroundColor(Color.GRAY)
+                            i.setBackgroundColor(Color.BLACK)
                         }
                     }
 
@@ -216,7 +216,7 @@ class MainActivity : AppCompatActivity() {
                     override fun onFinish() {
                         for(i in threebyfour)
                         {
-                            i.setBackgroundColor(Color.GRAY)
+                            i.setBackgroundColor(Color.BLACK)
                         }
                     }
 
@@ -289,7 +289,7 @@ class MainActivity : AppCompatActivity() {
                     override fun onFinish() {
                         for(i in threebyfive)
                         {
-                            i.setBackgroundColor(Color.GRAY)
+                            i.setBackgroundColor(Color.BLACK)
                         }
                     }
 
@@ -344,7 +344,7 @@ class MainActivity : AppCompatActivity() {
                     override fun onFinish() {
                         for(i in fourbythree)
                         {
-                            i.setBackgroundColor(Color.GRAY)
+                            i.setBackgroundColor(Color.BLACK)
                         }
                     }
 
@@ -400,7 +400,7 @@ class MainActivity : AppCompatActivity() {
                     override fun onFinish() {
                         for(i in fourbyfour)
                         {
-                            i.setBackgroundColor(Color.GRAY)
+                            i.setBackgroundColor(Color.BLACK)
                         }
                     }
 
@@ -474,7 +474,7 @@ class MainActivity : AppCompatActivity() {
                     override fun onFinish() {
                         for(i in fivebyfive)
                         {
-                            i.setBackgroundColor(Color.GRAY)
+                            i.setBackgroundColor(Color.BLACK)
                         }
                     }
 
@@ -545,7 +545,7 @@ class MainActivity : AppCompatActivity() {
                     override fun onFinish() {
                         for(i in fourbyfive)
                         {
-                            i.setBackgroundColor(Color.GRAY)
+                            i.setBackgroundColor(Color.BLACK)
                         }
                     }
 
@@ -607,7 +607,7 @@ class MainActivity : AppCompatActivity() {
                     override fun onFinish() {
                         for(i in fivebyfour)
                         {
-                            i.setBackgroundColor(Color.GRAY)
+                            i.setBackgroundColor(Color.BLACK)
                         }
                     }
 
@@ -683,7 +683,7 @@ class MainActivity : AppCompatActivity() {
                     override fun onFinish() {
                         for(i in fivebythree)
                         {
-                            i.setBackgroundColor(Color.GRAY)
+                            i.setBackgroundColor(Color.BLACK)
                         }
                     }
 
