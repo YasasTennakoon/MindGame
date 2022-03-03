@@ -41,7 +41,6 @@ class MainActivity : AppCompatActivity() {
         var b23=findViewById<Button>(R.id.button23)
         var b24=findViewById<Button>(R.id.button24)
         var b25=findViewById<Button>(R.id.button25)
-        var submit=findViewById<Button>(R.id.submit)
         var txt1=findViewById<TextView>(R.id.textView1)
         var txt2=findViewById<TextView>(R.id.textView2)
         var count=0
@@ -696,10 +695,6 @@ class MainActivity : AppCompatActivity() {
 
         }
         generateButton()
-        submit.setOnClickListener {
-            generateButton()
-        }
-
         b1.setOnClickListener {
             if(count<=correctbuttons.size-2)
             {
@@ -1185,8 +1180,6 @@ class MainActivity : AppCompatActivity() {
 
 
     }
-
-
 
 
 }
